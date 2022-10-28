@@ -15,30 +15,37 @@ export default [
             path: '',
             component: Dashboard,
             meta: {
-              title: 'Dashboard | YUKI',
+              title: 'Dashboard',
             },
-          }
+          },
+          {
+            path: ':catchAll(.*)',
+            component: () => import('@/views/404.vue'),
+            meta: {
+              title: '404 Not Found',
+            },
+          },
         ],
     },
     {
       path: '/login',
       component: Login,
       meta: {
-        title: 'Login | YUKI'
+        title: 'Login'
       }
     },
     {
       path: '/404',
       component: () => import('@/views/404.vue'),
       meta: {
-        title: '404 Not Found | YUKI',
+        title: '404 Not Found',
       },
     },
     {
       path: '/:catchAll(.*)',
       redirect: '/404',
       meta: {
-        title: '404 Not Found | YUKI',
+        title: '404 Not Found',
       },
     },
 ]

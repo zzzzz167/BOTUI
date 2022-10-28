@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 
 import routes from "./routes";
 
-const defaultTitle = 'YUKI_BOT'
+const defaultTitle = 'YUKI'
 
 const router = createRouter({
     history: createWebHistory(),
@@ -10,7 +10,7 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-    document.title = typeof to.meta?.title === 'string' ? to.meta.title : defaultTitle
+    document.title = typeof to.meta?.title === 'string' ? to.meta.title + ' | YUKI' : defaultTitle
     next()
 })
 
