@@ -6,7 +6,10 @@ module.exports = {
   },
   theme: {
     boxShadow:{
-      blur: "inset 0 0 1px 1px hsla(0,0%,100%,.9),0 20px 27px 0 rgba(0,0,0,.05)",
+      blur: "inset 0 0 1px 1px hsl(var(-b1)/0.9),0 20px 27px 0 rgba(0,0,0,.05)",
+    },
+    transitionTimingFunction: {
+      "soft-in": "cubic-bezier(0.42, 0, 1, 1)"
     }
   }
 };

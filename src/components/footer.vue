@@ -9,7 +9,10 @@
           class="w-9 h-9"
         ></object>
       </span>
-      <p>© 2022, made with ❤️ by zzzzz167</p>
+      <p>
+        © 2022, made with ❤️ by
+        <a href="https://github.com/zzzzz167" target="_blank" class="link link-secondary link-hover">zzzzz167</a>
+      </p>
     </div>
     <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
       <a class="svgImg" href="https://github.com/zzzzz167/BotUI" target="_blank"
